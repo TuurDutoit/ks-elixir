@@ -1,0 +1,5 @@
+<%= button("Random Word", to: Routes.page_path(@conn, :random_word), method: :get) %>
+<%= form_for(@conn, Routes.page_path(@conn, :search), [as: :search, method: :post], fn form -> %>
+  <%= text_input(form, :input, autofocus: true) %>
+  <%= submit("Search") %>
+<% end) %>

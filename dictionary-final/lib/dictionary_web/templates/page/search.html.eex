@@ -1,0 +1,5 @@
+<ol>
+  <%= for word <- @words do %>
+    <li><%= word %></li>
+  <% end %>
+</ol>
